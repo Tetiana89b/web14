@@ -1,0 +1,12 @@
+version: '1'
+services:
+  my_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8000
+    environment:
+      - DATABASE_URL=sqlite:///./contacts.sql
+    volumes:
+      - .:/app

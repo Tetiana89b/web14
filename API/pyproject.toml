@@ -1,0 +1,3 @@
+[build-system]
+requires = ["sphinx==4.0.2"]
+build-backend = "setuptools.build_meta"
